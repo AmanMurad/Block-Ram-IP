@@ -297,10 +297,13 @@ In this simulation, the address of port A is changing and displaying the data ou
 #### Port B
 In this simulation, the address of port B is chosen where data needs to be written. First, the write enable is turned on to write the data to the designated address provided by the user. Then, the write enable is turned off in the next cycle while the address remains the same to read the data that the user wrote in the previous cycle.
 
+Further references to learn more about implementation of BMG in Xilinx Vivado
 
+https://web.mit.edu/neboat/Public/6.111_final_project/code/blk_mem_gen_ds512.pdf
 
 ## The problem we are facing while using the Block RAM IP is with 32-bit read and write addresses.
 
 While using a 32-bit read or write address, the output for port A gets latched and never changes. Once it is set to the value of address 0, it remains the same regardless of address changes in each cycle. For port B, the output data variable initially holds the value of some random address. When the write enable is turned on to write to a specific byte, only that byte gets changed. However, when the address is changed to write to another address, the output value does not change; it remains the previously modified value. It updates the previous stored value instead of the new one. On different addresses, it changes the previous stored value instead of the original value for that address.
 
 These are the issues we are facing. If anyone knows the solution to resolve them, please let us know.
+
