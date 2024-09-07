@@ -291,6 +291,8 @@ endmodule
 
 ### The resultant simulation will be like this
 
+![image](https://github.com/user-attachments/assets/77c19ce1-8ac5-462f-ad5c-6a27184652e7)
+
 #### Port A
 In this simulation, the address of port A is changing and displaying the data output stored in the COE file accordingly. For port A, the enable signal is set to 0, as it is in no-change mode, so it is simply designed to retrieve data at the corresponding address provided by the user.
 
