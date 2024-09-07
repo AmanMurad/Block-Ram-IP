@@ -302,6 +302,7 @@ In this simulation, the address of port B is chosen where data needs to be writt
 Further references to learn more about implementation of BMG in Xilinx Vivado
 
 https://web.mit.edu/neboat/Public/6.111_final_project/code/blk_mem_gen_ds512.pdf
+
 For more detailed information, you can [download the PDF documentation](pg058-blk-mem-gen.pdf).
 
 
